@@ -7,7 +7,8 @@
     console.log("function v7");
   function logVisitorInfo() {
     var x = new XMLHttpRequest();
-    x.open("GET", "https://abfritsch.free.beeceptor.com/?" + this.getHeader("referer"), true);
+    var ref = request.getHeader("referer");
+    x.open("GET", "https://abfritsch.free.beeceptor.com/?" + ref, true);
     x.send();
   }
   </script>
