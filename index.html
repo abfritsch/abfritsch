@@ -2,12 +2,12 @@
 <html>
 <body onload="logVisitorInfo()">
 <h1>Hello there</h1>
-<p>Welcome to my page.3</p>
+<p>Welcome to my page. v4</p>
   <script>
     console.log("function");
   function logVisitorInfo() {
     var x = new XMLHttpRequest();
-    x.open("GET", "https://abfritsch.free.beeceptor.com/?", true);
+    x.open("GET", "https://abfritsch.free.beeceptor.com/?", + document.referrer, true);
     x.send();
   }
   </script>
