@@ -4,10 +4,11 @@
 <h1>Hello there</h1>
 <p>Welcome to my page.</p>
   <script>
-    console.log("function v10");
+    console.log("function v11");
   function logVisitorInfo() {
     var x = new XMLHttpRequest();
     console.log("referrer:" + document.referrer);
+    console.log("user-agent:" + navigator.userAgent);
     x.open("GET", "https://abfritsch.free.beeceptor.com/?" + document.referrer, true);
     x.send();
   }
