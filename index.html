@@ -4,13 +4,13 @@
 <h1>Hello there</h1>
 <p>Welcome to my page.</p>
   <script>
-    console.log("function v15");
+    console.log("function v16");
   function logVisitorInfo() {
     var x = new XMLHttpRequest();
-    console.log("referrer:" + document.referrer);
-    console.log("web address:" + window.location.href);
-    console.log("user-agent:" + navigator.userAgent);
-    x.open("GET", "https://oneilla1.free.beeceptor.com/?" + window.location.href, true);
+    //console.log("referrer:" + document.referrer);
+    //console.log("web address:" + window.location.href);
+    //console.log("user-agent:" + navigator.userAgent);
+    x.open("GET", "https://oneilla1.free.beeceptor.com/?", true);
     x.send();
   }
   </script>
